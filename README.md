@@ -10,7 +10,7 @@
 [![ImageKit](https://img.shields.io/badge/ImageKit-CDN-FF4D4D)](https://imagekit.io/)
 [![License](https://img.shields.io/badge/license-MIT-blue)](#license)
 
-[Live Demo](#) · [Report Bug](../../issues) · [Request Feature](../../issues)
+[🔗 Live Demo](https://cloudsnap-x107.onrender.com) · [Report Bug](../../issues) · [Request Feature](../../issues)
 
 </div>
 
@@ -38,6 +38,11 @@
 **CloudSnap** is a full-stack image sharing web application where users can register, log in, upload images with captions, and browse a shared gallery feed. All images are stored and served through **ImageKit CDN** for fast, global delivery. The landing page features a custom fire-themed hero section with a real-time canvas particle animation system.
 
 This project demonstrates a complete MERN-style stack (MongoDB, Express, React, Node) combined with third-party cloud storage, JWT authentication, and a single-service deployment model on Render.
+
+🔗 **Live app:** [cloudsnap-x107.onrender.com](https://cloudsnap-x107.onrender.com)
+
+> [!NOTE]
+> The app is hosted on Render's free tier, so the server may spin down during inactivity — the first load after idle time can take 30–60 seconds while it spins back up.
 
 ---
 
@@ -257,6 +262,8 @@ IMAGEKIT_URL_ENDPOINT=https://ik.imagekit.io/your_endpoint
 ---
 
 ## ☁️ Deployment (Render)
+
+> Currently deployed at **[cloudsnap-x107.onrender.com](https://cloudsnap-x107.onrender.com)**.
 
 ### Option A — Deploy Backend Only *(Recommended)*
 
