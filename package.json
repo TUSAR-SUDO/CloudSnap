@@ -1,0 +1,13 @@
+{
+  "name": "img-sharing-app-root",
+  "version": "1.0.0",
+  "scripts": {
+    "build:frontend": "npm run build --prefix Frontend",
+    "copy:frontend": "node scripts/copy-build.js",
+    "build": "npm run build:frontend && npm run copy:frontend",
+    "start": "node Backend/server.js"
+  },
+  "dependencies": {
+    "react-router-dom": "^7.18.0"
+  }
+}
