@@ -1,81 +1,165 @@
 <div align="center">
 
-# ☁️ CloudSnap
+<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=2,6,10&height=240&section=header&text=CloudSnap&fontSize=64&fontAlignY=35&fontColor=FFE5B4&desc=Upload.%20Store.%20Share.%20Powered%20by%20the%20Cloud.&descAlignY=58&descSize=20&descColor=FAFAFA&animation=fadeIn" />
 
-**A full-stack image sharing platform with cloud-powered delivery and a fire-themed landing experience.**
+<br/>
 
-[![React](https://img.shields.io/badge/React-19-61DAFB?logo=react&logoColor=black)](https://react.dev/)
-[![Node.js](https://img.shields.io/badge/Express-5-000000?logo=express&logoColor=white)](https://expressjs.com/)
-[![MongoDB](https://img.shields.io/badge/MongoDB-Atlas-47A248?logo=mongodb&logoColor=white)](https://www.mongodb.com/atlas)
-[![ImageKit](https://img.shields.io/badge/ImageKit-CDN-FF4D4D)](https://imagekit.io/)
-[![License](https://img.shields.io/badge/license-MIT-blue)](#license)
+<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=22&duration=2600&pause=700&color=FF8C42&center=true&vCenter=true&width=680&lines=A+full-stack+image+gallery+with+real+CDN+delivery;JWT+auth+%2B+MongoDB+%2B+ImageKit%2C+wired+end-to-end;Fire-particle+landing+page%2C+rendered+in+real-time;No+placeholders.+No+mockups.+Production-ready." />
 
-[🔗 Live Demo](https://cloudsnap-x107.onrender.com) · [Report Bug](../../issues) · [Request Feature](../../issues)
+<br/><br/>
+
+[![React](https://img.shields.io/badge/React-19-61DAFB?style=for-the-badge&logo=react&logoColor=black)](https://react.dev/)
+[![Express](https://img.shields.io/badge/Express-5-000000?style=for-the-badge&logo=express&logoColor=white)](https://expressjs.com/)
+[![MongoDB](https://img.shields.io/badge/MongoDB-Atlas-47A248?style=for-the-badge&logo=mongodb&logoColor=white)](https://www.mongodb.com/atlas)
+[![ImageKit](https://img.shields.io/badge/ImageKit-CDN-FF4D4D?style=for-the-badge&logo=icloud&logoColor=white)](https://imagekit.io/)
+[![License](https://img.shields.io/badge/License-MIT-blue?style=for-the-badge)](#-license)
+
+<br/>
+
+[**🔗 Live Demo**](https://cloudsnap-x107.onrender.com) &nbsp;·&nbsp; [**🐞 Report Bug**](../../issues) &nbsp;·&nbsp; [**✨ Request Feature**](../../issues)
 
 </div>
 
----
+<img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png" width="100%" />
+
+<br/>
 
 ## 📖 Table of Contents
 
-- [About](#about)
-- [Features](#features)
-- [Tech Stack](#tech-stack)
-- [Architecture](#architecture)
-- [Folder Structure](#folder-structure)
-- [API Reference](#api-reference)
-- [Getting Started](#getting-started)
-- [Environment Variables](#environment-variables)
-- [Deployment](#deployment)
-- [Roadmap](#roadmap)
-- [Contributing](#contributing)
-- [License](#license)
+<table>
+<tr>
+<td valign="top" width="33%">
 
----
+- [About](#-about)
+- [Features](#-features)
+- [Tech Stack](#️-tech-stack)
+- [Architecture](#️-architecture)
 
-## About
+</td>
+<td valign="top" width="33%">
 
-**CloudSnap** is a full-stack image sharing web application where users can register, log in, upload images with captions, and browse a shared gallery feed. All images are stored and served through **ImageKit CDN** for fast, global delivery. The landing page features a custom fire-themed hero section with a real-time canvas particle animation system.
+- [Folder Structure](#-folder-structure)
+- [API Reference](#-api-reference)
+- [Getting Started](#-getting-started)
+- [Environment Variables](#-environment-variables)
 
-This project demonstrates a complete MERN-style stack (MongoDB, Express, React, Node) combined with third-party cloud storage, JWT authentication, and a single-service deployment model on Render.
+</td>
+<td valign="top" width="33%">
 
-🔗 **Live app:** [cloudsnap-x107.onrender.com](https://cloudsnap-x107.onrender.com)
+- [Deployment](#️-deployment-render)
+- [Roadmap](#️-roadmap)
+- [Contributing](#-contributing)
+- [License](#-license)
+
+</td>
+</tr>
+</table>
+
+<br/>
+
+## 🌩️ About
+
+<table>
+<tr>
+<td width="60%" valign="top">
+
+**CloudSnap** is a full-stack image-sharing platform — register, log in, drag-and-drop an image with a caption, and watch it land in a shared gallery feed seconds later, served off a real CDN instead of local disk.
+
+Every image goes through **ImageKit**, every session is backed by a signed **JWT**, and every post lives in **MongoDB** — this isn't a UI mockup wired to dummy data, it's a working production stack.
+
+The landing page is the calling card: a full-screen fire hero with a real-time canvas particle system, no video file, no GIF — just math, running at 60fps.
+
+```ts
+const cloudsnap = {
+  type: "full-stack image sharing platform",
+  storage: "ImageKit CDN",
+  auth: "JWT + bcrypt",
+  database: "MongoDB Atlas",
+  signature: "real-time canvas fire particles, ~180 of them",
+};
+```
+
+</td>
+<td width="40%" valign="top">
+
+### ⚡ At a Glance
+
+| | |
+|---|---|
+| 🧱 Stack | MERN + CDN |
+| 🔐 Auth | JWT, 7-day expiry |
+| ☁️ Storage | ImageKit |
+| 🚀 Deploy | Render (single service) |
+| 🔥 Signature | Live canvas fire particles |
+| 🌐 Live | [cloudsnap-x107.onrender.com](https://cloudsnap-x107.onrender.com) |
+
+</td>
+</tr>
+</table>
 
 > [!NOTE]
-> The app is hosted on Render's free tier, so the server may spin down during inactivity — the first load after idle time can take 30–60 seconds while it spins back up.
+> Hosted on Render's free tier — the server can spin down during inactivity, so the first load after idle time may take 30–60 seconds while it wakes back up.
 
----
+<br/>
 
 ## ✨ Features
 
+<table>
+<tr>
+<td width="50%" valign="top">
+
 ### 🔐 Authentication
-- Register with full name, email, and password (bcrypt-hashed, 6+ char minimum)
+- Register with full name, email, password — bcrypt-hashed, 6+ char minimum
 - Login returns a JWT token (7-day expiry)
 - Session auto-restore via `/auth/me` on page load
-- Protected routes for Feed and Upload pages
+- Protected routes guard the Feed and Upload pages
 
 ### 📸 Image Upload
 - Drag-and-drop or click-to-browse upload
 - Live image preview before submission
-- Caption input with 200-character counter
-- Images uploaded as base64 to ImageKit and served via CDN URL
-- Toast notifications for upload progress/success/failure
+- Caption input with a 200-character counter
+- Images sent as base64 to ImageKit, served via CDN URL
+- Toast notifications for upload progress / success / failure
+
+</td>
+<td width="50%" valign="top">
 
 ### 🖼️ Gallery Feed
-- Responsive grid layout of all posts
-- Post cards with image, caption, author avatar, and "Cloud stored" badge
-- Animated like/toggle button
-- Loading skeletons and empty-state CTA
+- Responsive grid layout of every post
+- Cards show image, caption, author avatar, "Cloud stored" badge
+- Animated like / toggle button
+- Loading skeletons + empty-state CTA
 
 ### 🔥 Landing Page
 - Full-screen hero with custom FIREEYE background
-- Real-time canvas particle system (~150 flame + 30 ember particles)
-- Responsive particle scaling for mobile vs. desktop
-- Glassmorphism navbar with live user avatar when authenticated
+- Real-time canvas particle system — ~150 flame + 30 ember particles
+- Particle count scales responsively for mobile vs. desktop
+- Glassmorphism navbar with live user avatar when signed in
 
----
+</td>
+</tr>
+</table>
+
+<br/>
 
 ## 🛠️ Tech Stack
+
+<div align="center">
+
+![React](https://img.shields.io/badge/React%2019-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+![Vite](https://img.shields.io/badge/Vite%207-646CFF?style=for-the-badge&logo=vite&logoColor=white)
+![React Router](https://img.shields.io/badge/React%20Router%20v7-CA4245?style=for-the-badge&logo=reactrouter&logoColor=white)
+![Axios](https://img.shields.io/badge/Axios-5A29E4?style=for-the-badge&logo=axios&logoColor=white)
+![Express](https://img.shields.io/badge/Express%205-000000?style=for-the-badge&logo=express&logoColor=white)
+![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white)
+![Mongoose](https://img.shields.io/badge/Mongoose%209-880000?style=for-the-badge&logo=mongoose&logoColor=white)
+![ImageKit](https://img.shields.io/badge/ImageKit%20SDK-FF4D4D?style=for-the-badge&logo=icloud&logoColor=white)
+![JWT](https://img.shields.io/badge/JWT-000000?style=for-the-badge&logo=jsonwebtokens&logoColor=white)
+![bcrypt](https://img.shields.io/badge/bcryptjs-338?style=for-the-badge&logo=letsencrypt&logoColor=white)
+![Multer](https://img.shields.io/badge/Multer-FF6F00?style=for-the-badge)
+![Render](https://img.shields.io/badge/Render-46E3B7?style=for-the-badge&logo=render&logoColor=white)
+
+</div>
 
 | Layer | Technology | Purpose |
 |---|---|---|
@@ -90,7 +174,7 @@ This project demonstrates a complete MERN-style stack (MongoDB, Express, React, 
 | **File Upload** | Multer | Multipart form handling |
 | **Deployment** | Render | Single web service serving frontend + backend |
 
----
+<br/>
 
 ## 🏗️ Architecture
 
@@ -127,7 +211,7 @@ graph TB
     STATIC -->|serves| Client
 ```
 
----
+<br/>
 
 ## 📁 Folder Structure
 
@@ -194,7 +278,7 @@ cloudsnap/
 
 </details>
 
----
+<br/>
 
 ## 🔌 API Reference
 
@@ -206,7 +290,7 @@ cloudsnap/
 | `POST` | `/create-post` | ✓ | Upload an image + caption (multipart) |
 | `GET` | `/posts` | ✗ | Fetch all posts with user info |
 
----
+<br/>
 
 ## 🚀 Getting Started
 
@@ -239,10 +323,12 @@ cd Backend && npm start
 cd Frontend && npm run dev
 ```
 
-- Frontend: `http://localhost:5173` (proxies API requests to `:3000`)
-- Backend: `http://localhost:3000`
+| Service | URL |
+|---|---|
+| Frontend (dev) | `http://localhost:5173` *(proxies API to `:3000`)* |
+| Backend | `http://localhost:3000` |
 
----
+<br/>
 
 ## 🔑 Environment Variables
 
@@ -257,13 +343,13 @@ IMAGEKIT_URL_ENDPOINT=https://ik.imagekit.io/your_endpoint
 ```
 
 > [!CAUTION]
-> Never commit your `.env` file to version control. Make sure it is listed in `.gitignore`.
+> Never commit your `.env` file to version control. Make sure it's listed in `.gitignore`.
 
----
+<br/>
 
 ## ☁️ Deployment (Render)
 
-> Currently deployed at **[cloudsnap-x107.onrender.com](https://cloudsnap-x107.onrender.com)**.
+> Currently live at **[cloudsnap-x107.onrender.com](https://cloudsnap-x107.onrender.com)**
 
 ### Option A — Deploy Backend Only *(Recommended)*
 
@@ -289,7 +375,7 @@ IMAGEKIT_URL_ENDPOINT=https://ik.imagekit.io/your_endpoint
    | Build Command | `cd Frontend && npm install && cd ../Backend && npm install && cd .. && npm run build` |
    | Start Command | `npm start` |
 
----
+<br/>
 
 ## 🗺️ Roadmap
 
@@ -301,28 +387,32 @@ IMAGEKIT_URL_ENDPOINT=https://ik.imagekit.io/your_endpoint
 
 Feel free to open an issue to suggest more!
 
----
+<br/>
 
 ## 🤝 Contributing
 
-Contributions are welcome! To contribute:
+Contributions are welcome!
 
 1. Fork the repo
-2. Create your feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
+2. Create your feature branch — `git checkout -b feature/amazing-feature`
+3. Commit your changes — `git commit -m 'Add amazing feature'`
+4. Push to the branch — `git push origin feature/amazing-feature`
 5. Open a Pull Request
 
----
+<br/>
 
 ## 📄 License
 
 Distributed under the MIT License. See `LICENSE` for more information.
 
----
+<br/>
+
+<img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png" width="100%" />
 
 <div align="center">
 
-Built with ❤️ using React, Express, MongoDB & ImageKit.
+Built with 🔥 using React, Express, MongoDB &amp; ImageKit.
+
+<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=10,6,2&height=100&section=footer" />
 
 </div>
